@@ -38,6 +38,13 @@ class HttpClientController extends Controller
         ]) ; 
         return $post->json() ; 
     }
+    
+    
+    
+    public function deletePost($id){
+        $post = Http::delete('https://jsonplaceholder.typicode.com/posts/'.$id);
+        return $post->json() ; 
+    }
 
 
 }
