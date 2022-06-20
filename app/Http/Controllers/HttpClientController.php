@@ -28,6 +28,16 @@ class HttpClientController extends Controller
     ]) ; 
     return $post->json() ; 
     }
+    
+    
+    
+    public function updatePost(){
+        $post = Http::put('https://jsonplaceholder.typicode.com/posts/1',[
+            'title' => 'hello' ,
+            'body' => 'mahmoud' 
+        ]) ; 
+        return $post->json() ; 
+    }
 
 
 }
