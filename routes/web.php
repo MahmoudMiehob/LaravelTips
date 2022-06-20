@@ -39,6 +39,7 @@ Route::get('/post/{id}',[HttpClientController::class , 'showPost'])->name('post'
 Route::get('/add-post',[HttpClientController::class , 'addPost'])->name('addPost');
 
 Route::get('/update-post',[HttpClientController::class , 'updatePost'])->name('posts.update');
+
 Route::get('/delete-post/{id}',[HttpClientController::class , 'deletePost'])->name('posts.delete');
 
 
