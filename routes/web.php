@@ -32,4 +32,7 @@ Route::get('/dashboard', function () {
 require __DIR__.'/auth.php';
 
 
+Route::get('/posts',[HttpClientController::class , 'getAllPost'])->name('posts');
+
+
 
