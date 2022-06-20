@@ -12,6 +12,12 @@ class HttpClientController extends Controller
     $posts = Http::get("https://jsonplaceholder.typicode.com/posts") ; 
     return $posts->json() ; 
     }
+    
+    
+    public function showPost($id){
+    $post = Http::get("https://jsonplaceholder.typicode.com/posts/".$id) ; 
+    return $post->json() ; 
+    }
 
 
 }
