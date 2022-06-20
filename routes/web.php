@@ -34,5 +34,7 @@ require __DIR__.'/auth.php';
 
 Route::get('/posts',[HttpClientController::class , 'getAllPost'])->name('posts');
 
+Route::get('/post/{id}',[HttpClientController::class , 'showPost'])->name('post');
+
 
 
