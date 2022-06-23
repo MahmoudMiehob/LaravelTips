@@ -40,4 +40,7 @@ Route::get('/update-post',[HttpClientController::class , 'updatePost'])->name('p
 Route::get('/delete-post/{id}',[HttpClientController::class , 'deletePost'])->name('posts.delete');
 
 
+//Route::post('/add-post',[HttpClientController::class , 'addPost'])->name('addPost');
+
+
 
