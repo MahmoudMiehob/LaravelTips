@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\EmployeeController;
 use Inertia\Inertia;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Foundation\Application;
@@ -44,3 +45,4 @@ Route::get('/delete-post/{id}',[HttpClientController::class , 'deletePost'])->na
 
 
 
+Route::get('/employee',[EmployeeController::class,'index']);
