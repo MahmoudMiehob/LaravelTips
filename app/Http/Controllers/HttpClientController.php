@@ -9,8 +9,6 @@ class HttpClientController extends Controller
 {
 
 
-    
-
 
     public function getAllPost(){
         $posts = Http::get("https://jsonplaceholder.typicode.com/posts") ; 
